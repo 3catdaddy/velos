@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bikes</h1>
+
+<table class="table table-hover table-aut" >
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bikes.each do |bike| %>
+      <tr>
+        <td><%= bike.name %></td>
+        <td><%= link_to '', bike, :class=>"far fa-eye" %></td>
+        <td><%= link_to '', edit_bike_path(bike), :class=>"fas fa-edit" %></td>
+        <td><%= link_to '',  bike, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"far fa-trash-alt" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '', new_bike_path, :class=>"fas fa-plus-circle addico" %>
+
+
+        

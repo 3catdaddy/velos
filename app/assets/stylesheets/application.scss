@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+ 
+ @import "bootstrap";
+
+ h1 {
+     text-align: center;
+}
+ .navbar a {
+    
+    padding: 0.47369em 1.05264em;
+    border: solid 2px transparent;
+    border-radius: 2px;
+    font-size: 1.18751em;
+    color: #808080;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: color 0.3s cubic-bezier(0.33, 0.3, 0.22, 0.99), border-color 0.3s cubic-bezier(0.33, 0.3, 0.22, 0.99);
+    transition: color 0.3s cubic-bezier(0.33, 0.3, 0.22, 0.99), border-color 0.3s cubic-bezier(0.33, 0.3, 0.22, 0.99);
+ }
+ .nav-links li a:hover {
+    color: #FF6500 !important;
+    border-color: #FF6500;
+ }
+
+ .header {
+    width: 100%;
+    min-height: 6.50001em;
+    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: solid 30px rgba(255, 101, 0, 0.9);
+}
+
+
+.table-aut {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6500, #fa7600, #f58500, #f09300, #eba012);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6500, #fa7600, #f58500, #f09300, #eba012); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.table-aut td {
+    border-top: 1px dashed #dee2e6;
+    color: #FFF;
+}
+.table-aut thead th {
+    border-bottom: 2px dotted #dee2e6;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.09em;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #fc4a1a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #873500;
+}
+
+.formstyle {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 450px;
+    margin:auto;
+}
+.date-form select, .new-booking select{
+    
+ max-width: 160px ;
+}
+.addico {
+    font-size: 40px;
+    color: green ;
+    margin-top: 5px;
+}
+.addico:hover {
+background-color:transparent;
+color: #fc4a1a;
+text-decoration: none;
+}
